@@ -1,0 +1,22 @@
+version: 0.2
+phases:    
+  install:
+    runtime-versions:
+      dotnet: 3.1
+        
+  pre_build:
+    commands:
+      - echo MVC-WebApp
+      - dotnet restore
+
+
+  build:
+    commands:
+      - echo MVC-WebApp
+      - cd MVC-WebApp
+      - dotnet publish
+
+artifacts:
+  files:
+     - '**/*'
+     - appspec.yml
