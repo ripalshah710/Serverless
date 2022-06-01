@@ -1,0 +1,12 @@
+version: 0.0
+Resources:
+  - demo-serverless-lambda:
+      Type: AWS::Lambda::Function
+      Properties:
+        Name: "demo-serverless-lambda"
+        Alias: ""
+        CurrentVersion: "1"
+        TargetVersion: ""
+#Hooks:
+ # - BeforeAllowTraffic: "LambdaFunctionToValidateBeforeTrafficShift"
+  #- AfterAllowTraffic: "LambdaFunctionToValidateAfterTrafficShift"
