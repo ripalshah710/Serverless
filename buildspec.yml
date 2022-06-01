@@ -19,4 +19,4 @@ phases:
 artifacts:
   files:
      - appspec.yaml
-     - '**/*'
+     - 'MVC-WebApp/bin/Debug/netcoreapp3.1/publish/'
