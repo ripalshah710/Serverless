@@ -4,9 +4,9 @@ Resources:
       Type: AWS::Lambda::Function
       Properties:
         Name: "demo-serverless-lambda"
-        Alias: "default"
-        CurrentVersion: "$LATEST"
-        TargetVersion: "$LATEST"
-Hooks:
-  - BeforeAllowTraffic: "LambdaFunctionToValidateBeforeTrafficShift"
-  - AfterAllowTraffic: "LambdaFunctionToValidateAfterTrafficShift"
+#        Alias: "default"
+ #       CurrentVersion: "$LATEST"
+  #      TargetVersion: "$LATEST"
+#Hooks:
+ # - BeforeAllowTraffic: "LambdaFunctionToValidateBeforeTrafficShift"
+  #- AfterAllowTraffic: "LambdaFunctionToValidateAfterTrafficShift"
